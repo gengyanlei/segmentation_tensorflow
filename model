@@ -35,7 +35,7 @@ class model(object):
         return bias
         
     def conv_bn_f(self,bottom,is_training,name):
-        # finu-tune and batch_norm ; fine-tue not shape,shape had known
+        # finu-tune and batch_norm ; fine-tune not shape,shape had known
         with tf.variable_scope(name):
             weights=self.get_conv_filter(name)
             biases=self.get_bias(name)
