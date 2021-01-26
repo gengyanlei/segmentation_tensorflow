@@ -9,7 +9,7 @@ import tensorflow as tf
 from tensorflow.contrib.layers import xavier_initializer
 from tensorflow.contrib import slim
 
-class model(object):
+class Hed(object):
     def __init__(self,pretrain_model_path,class_number):
         self.vgg16_params=self.load_vgg_param(pretrain_model_path)
         self.class_number=class_number

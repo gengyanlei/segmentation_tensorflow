@@ -1,12 +1,25 @@
-# leilei
-HED tensorflow
+## Semantic Segmentation Network tensorflow
+```
+    author is leilei
+    
+    python: 3.6+
+    tensorflow: 1.2.1-1.8 (has tested)
+```
 
-声明：
-tensorflow 1.2.1 及其之后版本均可以使用。
-这里我们参考了HED的网络结构，由于HED网络是在caffe框架下实现的，caffe安装不易。
-因此，我们在tensorflow框架下实现它，并且做了一定的修改结构，但是思想没有变。仍然是concat巻积层特征。
+### Support Network
+- [x] deeplab_v2
+- [x] res_unet
+- [x] hed
+- [ ] ...
 
-需要使用 VGG16 weights 进行 fine-tune.
-VGG16权重保存为npy格式，较之tensorflow的ckpt会更灵活些。
-
-模型训练输入可采用任意大小，测试输入也可以采用任意大小。非常灵活！(注意：任意大小为128的整数倍最好)
+### Note
+```
+    由于研究生期间，复写1个语义分割网络，就上传1个github仓库，不好的习惯！
+    因此，删除了许多已经star的仓库，整合到此仓库下面。
+    但是，目前个人很少使用tensorflow 1.12以上的版本，且整体训练代码也遗忘，
+    这里仅记录自己复写的网络结构代码，github也有其它各类的项目参考，这里就不再更新！
+    
+    个人持续更新的语义分割网络(含训练-测试-数据增强等)-pytorch版本：
+    https://github.com/gengyanlei/segmentation_pytorch
+```
++ [segmentation_pytorch](https://github.com/gengyanlei/segmentation_pytorch)
